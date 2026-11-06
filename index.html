@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+		<title>Paperweight: Pop-Up Butterfly</title>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 		<style>
 			h1 {
@@ -27,80 +27,55 @@
 	</head>
 	<body>
 		<div class="container">
-		<h1>CS184/284A Fall 2026 Homework 3 Write-Up</h1>
-		<div style="text-align: center;">Names: </div>
+		<h1>Paperweight: Pop-Up Butterfly</h1>
+		<div style="text-align: center;">CS184/284A Fall 2026 Final Project Proposal</div>
+		<div style="text-align: center;">Team Members: Kate Chier, Sofia Vargas, Lauren Tang, Md Islam</div>
 
 		<br>
 
-		Link to webpage: (TODO) <a href="https://cs184.eecs.berkeley.edu/fa26">cs184.eecs.berkeley.edu/fa26</a>
-		Link to GitHub repository: (TODO) <a href="https://cs184.eecs.berkeley.edu/fa26">cs184.eecs.berkeley.edu/fa26</a>
-		
-		<figure>
-			<img src="assets/cornell.png" alt="Cornell Boxes with Bunnies" style="width:70%"/>
-			<figcaption>You can add images with captions!</figcaption>
-		</figure>
+		Link to webpage: <a href="https://kxchier.github.io/cs184-project-writeup/">kxchier.github.io/cs184-project-writeup</a>
 
-		<!--
-		We've already added one heading per part, to make your write-up as navigable when grading. Please fit your write-up within these sections!
-		-->
+		<h2>Summary</h2>
+		<p>Build an interactive paper butterfly that unfolds as a book opens. We will investigate how paper mass and stiffness affect the shape of the butterfly and the unfolding.</p>
 
-		<h2>Overview</h2>
-		Give a high-level overview of what you implemented in this homework. Think about what you've built as a whole. Share your thoughts on what interesting things you've learned from completing the homework.
+		<h2>Problem Description</h2>
+		<p>Our project aims to extend the results of the paper &ldquo;A Geometric Study of V-style Pop-ups&rdquo; by adding considerations for different types of paper. The discussion section of the paper identifies the consideration of paper properties, such as thickness, weight, and warping, as a potential direction for future work with significant practical value. Accounting for these variations would make the model more versatile and applicable to real-world uses, particularly in areas such as video game graphics and animation. We plan to solve this problem by conducting preliminary research on the physical properties of different types of paper, adding different coefficients to the base equations accordingly, and running simulations of each paper type. Ultimately, we hope that this project will give us a stronger understanding of how physical materials affect the geometry and rendering of pop up books.</p>
 
-		<h2>Part 1: Ray Generation and Scene Intersection</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<h2>Goals and Deliverables</h2>
+		<p>We plan to deliver an animation of a pop-up book, going from a closed to a fully-open state and vice versa, to display all the intermediate parts of the paper (un)folding. This can be included in our webpage as a GIF or embedded video. We can measure the quality of the created pop-up book by seeing if it folds and unfolds as planned in the animation, and also whether or not the folding behavior for at least 2 different paper materials is as expected.</p>
 
-		<p>Here is an example 2x2 gridlike structure using an HTML table. Each <b>tr</b> is a row and each <b>td</b> is a column in that row. You might find this useful for framing and showing your result images in an organized fashion.</p>
-		<div style="display: flex; flex-direction: column; align-items: center;">
-			<table style="width: 100%; text-align: center; border-collapse: collapse;">
-			  <tr>
-				<td style="text-align: center;">
-				  <img src="assets/cornell.png" width="400px"/>
-				  <figcaption>Caption goes here.</figcaption>
-				</td>
-				<td style="text-align: center;">
-				  <img src="assets/cornell.png" width="400px"/>
-				  <figcaption>Caption goes here.</figcaption>
-				</td>
-			  </tr>
-			  <tr>
-				<td style="text-align: center;">
-				  <img src="assets/cornell.png" width="400px"/>
-				  <figcaption>Caption goes here.</figcaption>
-				</td>
-				<td style="text-align: center;">
-				  <img src="assets/cornell.png" width="400px"/>
-				  <figcaption>Caption goes here.</figcaption>
-				</td>
-			  </tr>
-			</table>
-		</div>
-		
-		<h2>Part 2: Bounding Volume Hierarchy</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-		<h2>Part 3: Direct Illumination</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-		<h2>Part 4: Global Illumination</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-		<h2>Part 5: Adaptive Sampling</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-		<h2>(Optional) Part 6: Extra Credit Opportunities</h2>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		
-		<h2>Additional Notes (please remove)</h2>
+		<p>Questions we aim to answer:</p>
 		<ul>
-			<li>You can also add code if you'd like as so: <code>code code code</code></li>
-			<li>If you'd like to add math equations, 
+			<li>How does the folding behavior differ for the same pop-up book when using different materials?</li>
+			<li>How can we factor material types into our physics/rendering code?</li>
+		</ul>
+
+		<p>We hope to deliver animations involving more than 2 distinct paper materials. We also are interested in the concept of motion fitting, where in order to produce a specific movement, we need to figure out the paper folds which would produce it &ndash; if we have additional time, we hope to implement this as well.</p>
+
+		<h2>Schedule</h2>
+		<ul>
+			<li><b>Week 1:</b> Review geometric and physical pop-up simulation literature to clarify the technical contributions and understand how we might approach the unfolding simulation. Build physical butterflies and begin coding the pop-up built in code.</li>
+			<li><b>Week 2:</b> Implement flexible wings, gravity, and attachment constraints. Measure paper samples and calibrate parameters to add to the system. Test the system with default parameters on a butterfly.</li>
+			<li><b>Week 3:</b> Test additional parameters on the butterfly and collect videos of the animation and error measurements.</li>
+			<li><b>Week 4:</b> Finish comparisons and prepare the final paper, video, and presentation.</li>
+		</ul>
+
+		<h2>Resources</h2>
+		<ul>
+			<li>
+				A Geometric Study of V-Style Pop Ups: <a href="https://dl.acm.org/doi/10.1145/2010324.1964993">https://dl.acm.org/doi/10.1145/2010324.1964993</a>
 				<ul>
-					<li>You can write inline equations like so: \( a^2 + b^2 = c^2 \)</li>
-					<li>You can write display equations like so: \[ a^2 + b^2 = c^2 \]</li>
+					<li>Reference for constructing a V-fold mechanism and calculating opening and closing motion</li>
+				</ul>
+			</li>
+			<li>
+				Generating Animated Paper Pop Ups: <a href="https://link.springer.com/article/10.1007/s00371-015-1125-8">https://link.springer.com/article/10.1007/s00371-015-1125-8</a>
+				<ul>
+					<li>Reference for modeling paper using mass-spring systems and hing springs</li>
 				</ul>
 			</li>
 		</ul>
+		<p><b>Computing Platform:</b> Develop in VS Code using Javascript and Three.js (starting code is a Three.js scene)</p>
 		</div>
 	</body>
 </html>
